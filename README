@@ -1,0 +1,21 @@
+=== BUILDING ===
+To build this program C++ boost library needs to be installed on the system. Also g++ must support C++11 standard.
+To build all components, execute:
+make all
+To clean up after build, execute:
+make clean
+or to clean binaries as well, execute:
+make cleanall
+
+
+
+=== EXECUTING ===
+To run this program, simply run the following in terminal:
+./server 1313
+
+To verify the program works, run multiple times the client programs in separate terminal as follows:
+./client localhost 1313 service message
+Each message from service is counted on server.
+
+To check number of messages passed to server from each service, type "count" to server terminal.
+To quit server type "exit" to server terminal.
